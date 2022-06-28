@@ -1,4 +1,5 @@
 function [N] = NullSpace(A)
-    R = rref(A);
+    C = A*A';
+    [U,S]
     
 end

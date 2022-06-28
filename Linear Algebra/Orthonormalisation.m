@@ -1,5 +1,5 @@
-%V = input("Enter a matrix : ");
-V = [2,1,0,-1;1,0,2,-1;0,-2,1,0];
+V = input("Enter a matrix : ");
+%V = [2,1,0,-1;1,0,2,-1;0,-2,1,0];
 V = V';
 [m,n] = size(V);
 V1 = zeros(m,n);
