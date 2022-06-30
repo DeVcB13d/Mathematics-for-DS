@@ -8,7 +8,15 @@
 
 A = [3 2 ; 0 5];
 
-EigenValues = [3;5];
-% Since it is a UTM its diagonal entries are its EigenVectors
 
-EV = eig(A);
+[V,D] = eig(A)
+
+Iv =inv(V);
+
+An = V*D*Iv
+
+if An==A
+    disp("diagonalizeable");
+else
+    disp("not diagonalizeable");
+end
